@@ -8,4 +8,4 @@ class Customer:
     
 
     def __repr__(self):
-        return f"Customer Id : {self.id} Customer Name : {self.name} Customer Email : {self.email}"
+        return f"Customer Id : {self.id} Customer Name : {self.name} Customer Email : {self.email} Customer Active:{self.active}"
