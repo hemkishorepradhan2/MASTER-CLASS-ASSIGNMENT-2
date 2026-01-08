@@ -1,19 +1,17 @@
 from models import Customer
-from repository import add_customer, get_customer_by_id
-from repository import get_all_customers
-from repository import delete_customers
+from repository import add_customer, get_customer_by_id, get_all_customers, delete_customer
 from errors import CustomerNotFoundError
-def create_customer(id:int , name:str , email:str , active:bool):
-    customer=Customer(id,name=name,email=email ,active=active)
+
+def create_customer(id: int, name: str, email: str, active: bool) -> Customer:
+    customer = Customer(id=id, name=name, email=email, active=active)
     return add_customer(customer)
-def list_customer():
+
+def list_customers() -> list[Customer]:
     return get_all_customers()
- 
-def remove_customers(customer_id:int):
-    customer=get_customer_by_id(customer_id)
+
+def remove_customer(customer_id: int) -> bool:
+    customer = get_customer_by_id(customer_id)
     if not customer:
-        raise CustomerNotFoundError("Customer is not found.")
-    delete_customers(customer_id=customer_id)
-    
-
-
+        raise CustomerNotFoundError(f"Customer with ID {customer_id} not found.")
+    delete_customer(customer_id)
+    return True
