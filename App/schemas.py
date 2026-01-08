@@ -1,10 +1,10 @@
-from pydantic import BaseModel,EmailStr
+from pydantic import BaseModel,EmailStr,Field
 
 class CustomerCreate(BaseModel):
-    id:int
-    name:str
+    id:int=Field(gt=0)
+    name:str=Field(min_length=3,max_length=100)
     email:EmailStr
-    active:bool
+    active:bool=True
 
 class CustomerResponse(BaseModel):
     id:int

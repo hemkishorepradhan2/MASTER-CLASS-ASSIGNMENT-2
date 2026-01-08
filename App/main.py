@@ -39,4 +39,4 @@ async def remove_customer(customer_id: int):
         remove_customer_service(customer_id)
     except Exception:
         raise HTTPException(status_code=404, detail="Customer not found")
-    return {"message": "Deleted successfully"}
+    return {"message": "Customer deleted successfully"}
