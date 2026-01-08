@@ -1,11 +1,11 @@
-# 🚀 FastAPI Customer Management API
+# FastAPI Customer Management API
 
 A simple FastAPI application to manage customers with basic CRUD operations.
 This project demonstrates how to create, list, retrieve, and delete customers using RESTful APIs.
 
 ---
 
-## 📌 Features
+## Features
 
 - Create a new customer  
 - List all customers  
@@ -15,7 +15,7 @@ This project demonstrates how to create, list, retrieve, and delete customers us
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Python 3.9+  
 - FastAPI  
@@ -24,7 +24,7 @@ This project demonstrates how to create, list, retrieve, and delete customers us
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
     project-root/
     │── main.py
@@ -35,16 +35,16 @@ This project demonstrates how to create, list, retrieve, and delete customers us
     │   └── remove_customer.py
     │── schemas.py
     │── README.md
-    │── images/
-    │   ├── home.png
-    │   ├── swagger_ui.png
-    │   ├── create_customer.png
-    │   ├── get_customers.png
-    │   └── delete_customer.png
+    │── outputs/
+    │   ├── Image1.png
+    │   ├── Image2.png
+    │   ├── Image3.png
+    │   ├── Image4.png
+    │   └── Image5.png
 
 ---
 
-## ▶️ How to Run the Application
+## How to Run the Application
 
 1. Create virtual environment
 
@@ -68,9 +68,9 @@ This project demonstrates how to create, list, retrieve, and delete customers us
 
 ---
 
-## 🔗 API Endpoints
+## API Endpoints
 
-### 🏠 Home
+### Home
 
 GET /
 
@@ -79,7 +79,7 @@ Response
 
 ---
 
-### ➕ Create Customer
+### Create Customer
 
 POST /create_customer
 
@@ -98,7 +98,7 @@ Response
 
 ---
 
-### 📋 Get All Customers
+### Get All Customers
 
 GET /get_customers
 
@@ -114,7 +114,7 @@ Response
 
 ---
 
-### 🔍 Get Customer by ID
+### Get Customer by ID
 
 GET /customer/{customer_id}
 
@@ -135,7 +135,7 @@ Error
 
 ---
 
-### ❌ Remove Customer
+### Remove Customer
 
 DELETE /remove_customer/{customer_id}
 
@@ -146,26 +146,26 @@ Response
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Home Route
-![Home](images/home.png)
+![Home](https://raw.githubusercontent.com/hemkishorepradhan2/MASTER-CLASS-ASSIGNMENT-2/main/App/outputs/Image1.png)
 
 ### Swagger UI
-![Swagger UI](outputs/Image1.png)
+![Swagger UI](https://raw.githubusercontent.com/hemkishorepradhan2/MASTER-CLASS-ASSIGNMENT-2/main/App/outputs/Image2.png)
 
 ### Create Customer
-![Create Customer](out/create_customer.png)
+![Create Customer](https://raw.githubusercontent.com/hemkishorepradhan2/MASTER-CLASS-ASSIGNMENT-2/main/App/outputs/Image3.png)
 
 ### Get Customers
-![Get Customers](images/get_customers.png)
+![Get Customers](https://raw.githubusercontent.com/hemkishorepradhan2/MASTER-CLASS-ASSIGNMENT-2/main/App/outputs/Image4.png)
 
 ### Delete Customer
-![Delete Customer](images/delete_customer.png)
+![Delete Customer](https://raw.githubusercontent.com/hemkishorepradhan2/MASTER-CLASS-ASSIGNMENT-2/main/App/outputs/Image5.png)
 
 ---
 
-## ✅ Status Codes Used
+## Status Codes Used
 
 - 201 Created  
 - 200 OK  
@@ -174,13 +174,13 @@ Response
 
 ---
 
-## ✨ Author
+## Author
 
 Your Name  
-FastAPI Developer 🚀
+FastAPI Developer
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
