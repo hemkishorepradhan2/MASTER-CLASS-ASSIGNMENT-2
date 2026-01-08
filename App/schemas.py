@@ -1,14 +1,14 @@
-from pydantic import BaseModel
+from pydantic import BaseModel,EmailStr
 
 class CustomerCreate(BaseModel):
     id:int
     name:str
-    email:str
+    email:EmailStr
     active:bool
 
 class CustomerResponse(BaseModel):
     id:int
     name:str
-    email:str
+    email:EmailStr
     active:bool
     
